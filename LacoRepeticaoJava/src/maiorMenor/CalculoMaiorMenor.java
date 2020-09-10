@@ -6,27 +6,20 @@ public class CalculoMaiorMenor {
 	public static void main(String[] args) {
 		Scanner tec = new Scanner(System.in);
 		int num[]=new int[3];
-		int aux=0,maior=0,menor=0,meio=0;
+		int aux=0;
+		int num1,num2,num3;
+	
+		System.out.print("Digite o primeiro numero: ");
+		num1=tec.nextInt();
+		System.out.print("Digite o primeiro numero: ");
+		num2=tec.nextInt();
+		System.out.print("Digite o primeiro numero: ");
+		num3=tec.nextInt();
+		
+		if (num1>num2 && num1>num3 && num2<num1 &&num2<num3) {
+			System.out.println(num1+","+num2+","+num3);	
+		}//apresentando erro
 		
 		
-		for(aux=0;aux<3;aux++) {
-			System.out.print("Digite um numero:");
-			num[aux]=tec.nextInt();
-		
-			if(menor>num[aux]) {	
-				menor=num[aux];
-			}
-			if(maior<num[aux]) {
-				maior=num[aux];
-			}
-			if(num[aux]>=menor && num[aux]<=maior){
-				meio=num[aux];
-			}
-			
-						
-		}	
-		
-		System.out.println("NUMEROS EM ORDEM CRESCENTE");
-		System.out.print(menor+","+meio+","+maior);
-	}
+	}	
 }
