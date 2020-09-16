@@ -24,15 +24,17 @@ public class Aviao {
 		System.out.println("Trem de pouso ok:"+tremDePouso);
 		System.out.println("Portas fechadas:"+portasFechadas);
 		System.out.println("Passageiros:"+passageiros);
-		
-		System.out.println("------------------------");
+		System.out.println("\n");
 	}
+	
 	public void permissao() {
 		if (turbina==true && bombaCombustivel==true && painelControle==true &&tremDePouso==true&&
 				portasFechadas==true && passageiros==true) {
 			System.out.println("Decolagem altorizada");
+			System.out.println("------------------------");
 		}else {
 			System.out.println("Decolagem negada. Verifique o avião e tente novamente.");
+			System.out.println("------------------------");
 		}
 	}
 	
