@@ -9,14 +9,14 @@ public class Testador {
 		Fornecedor novoFornecedor= new Fornecedor("Luis",500,200);//nome, credito, divida
 		Empregado novoEmpregado= new Empregado("Beatriz",2347,4000,50);//nome, codigo, salario, porcentagem imposto
 		
-		
+		System.out.println("-------PESSOA-------------");
 		System.out.println(novaPessoa.getNome());
-		System.out.println(novoFornecedor.getNome());
+		System.out.println("-------EMPREGADO----------");
 		System.out.println(novoEmpregado.getNome());
-		
-		novoFornecedor.obterSaldo();
 		novoEmpregado.calcularSalario();
-		
+		System.out.println("-------FORNECEDOR---------");
+		System.out.println(novoFornecedor.getNome());
+		novoFornecedor.obterSaldo();
 	}
 
 }

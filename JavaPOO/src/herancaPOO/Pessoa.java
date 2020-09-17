@@ -7,14 +7,7 @@ public class Pessoa {
 		private String endereco;
 		private String telefone;
 		
-		//metodos
-		
-		
-		
-		//metodos especiais get and set
-		public String getNome() {
-			return nome;
-		}
+		//construtores
 		public Pessoa(String nome) {
 			super();
 			this.nome = nome;
@@ -29,9 +22,12 @@ public class Pessoa {
 			this.nome = nome;
 			this.endereco = endereco;
 			this.telefone = telefone;
+		}	
+		
+		//metodos especiais get and set
+		public String getNome() {
+			return nome;
 		}
-		
-		
 		public void setNome(String nome) {
 			this.nome = nome;
 		}

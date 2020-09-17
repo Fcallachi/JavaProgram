@@ -19,8 +19,6 @@ public class Fornecedor extends Pessoa{
 	
 	//metodos
 	public void obterSaldo() {
-		System.out.println("---------------------------------");
-		System.out.println("FORNECEDOR ");
 		System.out.println("VAlor de credito menos valor da divida ");
 		System.out.println(valorCredito-valorDivida);
 	}

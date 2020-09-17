@@ -13,7 +13,6 @@ public class Empregado extends Pessoa {
 	
 	//metodos
 	public void calcularSalario() {
-		System.out.println("----------------------");
 		System.out.println("Calculo do salário.");
 		System.out.println(salarioBase-(salarioBase*(impostos/100)));
 	}
