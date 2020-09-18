@@ -3,10 +3,19 @@ package contas;
 public class ContaEspecial extends ContaCorrente{	
 	
 	private double limite;
+	final double Selic=1.16;
+
 	
+
+	public ContaEspecial(int numero, double saldo, int talonario, double limite) {
+		super(numero, saldo, talonario);
+		this.limite = limite;
+	}
+
 	//metodos
-	public void calculaJuros() {
-		
+	public double calculaJuros() {
+		//selic 2 
+		return saldo*Selic; 
 	}
 
 	//get and set

@@ -3,19 +3,27 @@ package contas;
 public abstract class ContaBancaria {
 	
 	private int numero;
-	private double saldo;
+	protected double saldo;
 	
 	private String transacoes[]= new String [3];
 	
+	public ContaBancaria(int numero, double saldo) {
+		super();
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+	
 	//metodos
+	
 	public void emiteExtrato() {
-		
+		System.out.println("Numero da conta:"+this.numero);
+		System.out.println("seu saldo é:"+ this.saldo);
 	}
-	public double credite() {
-		return 0;
+	public double credite(double valorDeposito) {
+		return saldo=(this.getSaldo()+valorDeposito);
 	}
-	public double debite() {
-		return 0;
+	public double debite(double valorDeposito) {
+		return this.saldo-valorDeposito;
 	}
 	
 	//get and set
@@ -35,5 +43,6 @@ public abstract class ContaBancaria {
 	public void setTransacoes(String[] transacoes) {
 		this.transacoes = transacoes;
 	}
+	
 	
 }

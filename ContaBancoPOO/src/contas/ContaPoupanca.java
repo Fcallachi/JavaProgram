@@ -6,9 +6,19 @@ public class ContaPoupanca extends ContaBancaria {
 	private double corrMonetaria;
 	private int mesAniversario;
 	
+	
+	
+	public ContaPoupanca(int numero, double saldo, double juros, double corrMonetaria, int mesAniversario) {
+		super(numero, saldo);
+		this.juros = juros;
+		this.corrMonetaria = corrMonetaria;
+		this.mesAniversario = mesAniversario;
+	}
+	
+
 	//metodos
 	public void aniversarioMes() {
-
+		 this.saldo*=this.juros;
 	}
 	
 	//get and set

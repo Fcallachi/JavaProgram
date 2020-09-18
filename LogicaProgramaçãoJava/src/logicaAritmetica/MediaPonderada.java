@@ -11,7 +11,8 @@ public class MediaPonderada {
 		int media=((n1+n2+n3)/3);
 		System.out.print("Digite o seu nome: ");
 		nome=tec.next();
-		System.out.println(nome+" Suas notas foram "+n1+","+n2+","+n3+".");
+		System.out.printf("%s Suas notas foram: %d, %d, %d.",nome,n1,n2,n3);
+		System.out.println("");
 		System.out.println("Sua media foi:"+media);
 	
 	}
